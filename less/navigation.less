@@ -8,12 +8,18 @@ header {
     justify-content: space-between;
     align-items: center;
 
+    @media @tablet {
+        // flex-wrap: wrap;
+        // flex-direction: column;
+        padding-top: 0;
+        padding-bottom: 30px;
+    }
     @media @mobile {
         flex-wrap: wrap;
         flex-direction: column;
         padding: 0;
-        
     }
+
     .nav {
         a {
             color: @font-color;
@@ -22,6 +28,11 @@ header {
             line-height: 1.5;
             font-size: 1.6rem;
             padding-bottom: 10px;
+
+            @media @tablet {
+                margin-top: 10px;
+                margin-right: 10px;
+            }
 
         }
         @media @mobile {
