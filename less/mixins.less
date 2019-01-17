@@ -11,10 +11,10 @@
     align-items: center;
   }
 
-.awesome-button() {
-    width: 83%;
-    background-color: @button-bg;
-    color: @white;
+.awesome-button(@buttonbg: @button-bg, @button-txt: @white, @btn-width: 83%) {
+    width: @btn-width;
+    background-color: @buttonbg;
+    color: @button-txt;
     .border-radius(10px);
     .center();
     padding: 10px;
